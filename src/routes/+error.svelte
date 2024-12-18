@@ -1,15 +1,11 @@
 <script>
 	import { page } from '$app/stores';
-	import '../app.css';
-	import SideBar from '$lib/SideBar.svelte';
 </script>
 
 <svelte:head>
 	<title>{$page.status} - {$page.error?.message}</title>
-	<meta name="description" content="Oops! Noget gik galt, prøv igen senere." />
+	<meta name="description" content="Oops! Something went wrong, please try again!" />
 </svelte:head>
-
-<SideBar />
 
 <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900">
 	<h1 class="text-6xl font-bold text-red-500">{$page.status} - {$page.error?.message}</h1>
@@ -21,9 +17,3 @@
 		>
 	</div>
 </div>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.900);
-	}
-</style>

@@ -15,8 +15,9 @@
 		"node": "^18.18.0 || >=20.0.0"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-cloudflare": "^3.0.2",
-		"@sveltejs/kit": "^2.8.3",
+		"@catppuccin/tailwindcss": "^0.1.6",
+		"@sveltejs/adapter-cloudflare": "^0.0.1",
+		"@sveltejs/kit": "^2.12.1",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.0",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",

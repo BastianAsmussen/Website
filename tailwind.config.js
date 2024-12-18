@@ -2,7 +2,24 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				mono: 'JetBrains Mono, mono'
+			}
+		}
 	},
-	plugins: []
+	safelist: [
+		{
+			pattern: /bg-.+/
+		},
+		'mocha',
+		'macchiato',
+		'frappe',
+		'latte'
+	],
+	plugins: [
+		require('@catppuccin/tailwindcss')({
+			defaultFlavour: 'mocha'
+		})
+	]
 };
